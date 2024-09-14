@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://global.coneau.gob.ar/coneauglobal/publico/buscadores/acreditacion/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./CONEAU Global - Acreditación_files/DXR.axd"><link rel="stylesheet" type="text/css" href="./CONEAU Global - Acreditación_files/DXR(1).axd"><link rel="stylesheet" type="text/css" href="./CONEAU Global - Acreditación_files/DXR(2).axd"><link rel="stylesheet" type="text/css" href="./CONEAU Global - Acreditación_files/DXR(3).axd"><link rel="stylesheet" type="text/css" href="./CONEAU Global - Acreditación_files/DXR(4).axd"><link rel="stylesheet" type="text/css" href="./CONEAU Global - Acreditación_files/DXR(5).axd"><meta name="HandheldFriendly" content="true"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link rel="shortcut icon" href="https://global.coneau.gob.ar/coneauglobal/favicon.ico" type="image/x-icon"><link rel="icon" href="https://global.coneau.gob.ar/coneauglobal/favicon.ico" type="image/x-icon"><link href="./CONEAU Global - Acreditación_files/base.css" rel="stylesheet" type="text/css" media="screen"><link href="./CONEAU Global - Acreditación_files/base-imprimir.css" rel="stylesheet" type="text/css" media="print">
+    
+    
+    
+
+
+
+
+
+<!-- VENTANA DE PERSONALIZACION DE COLUMNAS DE LA GRILLA DEL LADO DEL CLIENTE -->
+    <script type="text/javascript" async="" src="./CONEAU Global - Acreditación_files/js"></script><script async="" src="./CONEAU Global - Acreditación_files/analytics.js.descarga"></script><script type="text/javascript">
+    // <![CDATA[ 
+        function btnAgregarQuitarColumnas_Click(s, e) {
+            if(grid.IsCustomizationWindowVisible())
+                grid.HideCustomizationWindow();
+            else
+                grid.ShowCustomizationWindow();
+            UpdateButtonText();
+        }
+        function grid_CustomizationWindowCloseUp(s, e) {
+            UpdateButtonText();
+        }
+        function UpdateButtonText() {
+            var text = grid.IsCustomizationWindowVisible() ? "Ocultar" : "Mostrar";
+            text += " otras columnas";
+            btnAgregarQuitarColumnas.SetText(text);
+        }
+    // ]]> 
+    </script>
+<!-- VENTANA DE PERSONALIZACION DE COLUMNAS DE LA GRILLA DEL LADO DEL CLIENTE -->
+    
+
+
+<title>
+	CONEAU Global - Acreditación 
+</title><style></style></head>
+
+<body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="" style="">
+    <script src="./CONEAU Global - Acreditación_files/jquery-1.10.2.min.js.descarga" type="text/javascript"></script>
+    <script src="./CONEAU Global - Acreditación_files/sgwNucleoNoCache.js.descarga" type="text/javascript"></script>
+    <script src="./CONEAU Global - Acreditación_files/sgwNucleo.js.descarga" type="text/javascript"></script>
+    <form method="post" action="https://global.coneau.gob.ar/coneauglobal/publico/buscadores/acreditacion/" id="frmBase">
+<div class="aspNetHidden">
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUINDQ1Nzk5NDIPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgICAQ9kFgYCAQ8WBB4MUmVwb3J0SGVhZGVyBR1FeHBvcnRhY2nDs24gZGUgQ09ORUFVIEdsb2JhbB4MUmVwb3J0Rm9vdGVyBTtHZW5lcmFkbyBwb3IgQ09ORUFVIEdsb2JhbCAtIMOBcmVhIGRlIFNpc3RlbWFzIGRlIGxhIENPTkVBVWQCAw9kFgJmDxYCHgVWYWx1ZQUMWTJKZ1lQZ0VoQUE9ZAILD2QWAmYPZBYCAgUPZBYCAgEPZBYGAgMPZBYCAgEPZBYCAgEPPCsABwEADxYCHg5fIVVzZVZpZXdTdGF0ZWdkZAIFD2QWAgIBD2QWBAINDw8WAh4HVmlzaWJsZWhkZAIPDzwrABgDAA8WAh4PRGF0YVNvdXJjZUJvdW5kZ2QGD2QQFgkCAQICAgMCBAIFAgYCBwIIAgkWCTwrAAsBABYCHg9Db2xWaXNpYmxlSW5kZXhmPCsACwEAFgQeCVNvcnRJbmRleGYfBgIBPCsACwEAFgQfBwICHwYCAjwrAAsBABYEHwcCAR8GAgM8KwALAQAWAh8GAgQ8KwALAQAWAh8GAgU8KwALAQAWAh8GAgY8KwALAQAWAh8GAgc8KwALAQAWAh4KQ29sVmlzaWJsZWgPFgkCAQIBAgECAQIBAgECAQIBAgEWAQWNAURldkV4cHJlc3MuV2ViLkFTUHhHcmlkVmlldy5HcmlkVmlld0RhdGFUZXh0Q29sdW1uLCBEZXZFeHByZXNzLldlYi52MTIuMiwgVmVyc2lvbj0xMi4yLjEwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YRU8KwAGAQUUKwACZGRkAgcPFgQfAAUHTElTVEFETx8BBS5HZW5lcmFkbyBwb3IgQ09ORUFVIEdsb2JhbCAtIMOBcmVhIGRlIFNpc3RlbWFzZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WBAVIY3RsMDAkY3RsMDAkY3RsMDAkY3RsMDAkQ2VudHJhbCRDZW50cmFsJEl6cXVpZXJkbyRJenF1aWVyZG8kbW51SXpxdWllcmRvBUNjdGwwMCRjdGwwMCRjdGwwMCRjdGwwMCRDZW50cmFsJENlbnRyYWwkQ2VudHJhbCRDZW50cmFsJGdyZENvbnN1bHRhBUljdGwwMCRjdGwwMCRjdGwwMCRjdGwwMCRDZW50cmFsJENlbnRyYWwkQ2VudHJhbCRDZW50cmFsJGdyZENvbnN1bHRhJERYSEZQBVNjdGwwMCRjdGwwMCRjdGwwMCRjdGwwMCRDZW50cmFsJENlbnRyYWwkQ2VudHJhbCRDZW50cmFsJGdyZENvbnN1bHRhJERYRmlsdGVyUm93TWVuddoVKVkOhdom3io13fIzgcnHIyfbzoWIA8dVnlvulvcr">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmBase'];
+if (!theForm) {
+    theForm = document.frmBase;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./CONEAU Global - Acreditación_files/WebResource.axd" type="text/javascript"></script>
+
+<script id="dxis_1558285961" src="./CONEAU Global - Acreditación_files/DXR(6).axd" type="text/javascript"></script><script id="dxis_1349603657" src="./CONEAU Global - Acreditación_files/DXR(7).axd" type="text/javascript"></script>
+<script src="./CONEAU Global - Acreditación_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./CONEAU Global - Acreditación_files/ScriptResource(1).axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="276174D3">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAtCm0YjGW27w+en2Ce45Z/lvtZztjFb2jNGrrKwyKNz90OKyPF+OTY/ZlzzkysMOSXdKeguFSEOO4GXWSG/WnOpHTAnrtv5IsGVcHE0i3aHMsCgOiOElJ9HUKo1WL3K6VbifCqPac7xD+3xgDOI5gA0b2JXoKifWMWDs7d8AKkl5I8aGB/3q3gdA36eLvcDFrbhQw0rhA63gVjUm3Z8cDO5aLcBokja5ZLfYyCgCIWpFoxzkjNWTMyzrjf8QqKPtNM2c5dnmK07oE8B0lGzXvKG">
+</div>
+    
+    
+    <input type="hidden" name="ctl00$ctl00$ctl00$ctl00$grdPvExportarSTATE" id="grdPvExportarSTATE" value="Y2JgYPgEhAA=">
+    
+    
+    
+        <!-- CONTENIDO SUPERIOR -->
+        <div class="header-movil">
+            
+            <label for="chkVerMenu" class="ver-menu"></label>
+	        <input type="checkbox" id="chkVerMenu" role="button">
+            <div class="div-clear"></div>
+            
+    
+    <div style="text-align: left;">
+    <!-- Menú personalizado de aplicación -->
+    
+    <!-- Menú personalizado de aplicación -->
+    </div>
+
+        </div>
+        <!-- CONTENIDO SUPERIOR -->
+
+
+        <!-- CONTENIDO CENTRAL CON AJAX -->
+        <div class="div-fondo">
+
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ctl00$ctl00$ToolkitScriptManager1', 'frmBase', ['tctl00$ctl00$ctl00$ctl00$UpdatePanel1','UpdatePanel1'], [], [], 600, 'ctl00$ctl00$ctl00$ctl00');
+//]]>
+</script>
+
+            <div id="UpdatePanel1">
+	
+                    <div id="pnlEstadoAJAXContenedor" class="divEstadoAJAXContenedor" style="display: none">
+                        <div id="pnlEstadoAJAX" class="divEstadoAJAX" style="background-color:#FFE0A0;">
+		
+                            <span id="lblEstadoAJAX"></span>
+                            <a style="color: white; text-decoration: underline" href="https://global.coneau.gob.ar/coneauglobal/mainframe/application/exception.aspx" target="_blank">Mas información</a>
+                        
+	</div>
+                    </div>
+                <!-- Panel de actualización AJAX -->
+                <div id="UpdateProgress1" style="display:none;" role="status" aria-hidden="true">
+		
+                    
+                        <div class="divEstadoAJAXContenedor" style="display: inline">
+                        <div class="divEstadoAJAX" style="background: #FFE6A8; color: black">
+                            <!--&nbsp;&nbsp;<img id="Imagenb" src="../../../imagenes/ajax/loading.gif" style="height:32px;" />&nbsp;-->
+                            Cargando...
+                        </div>
+                        </div>
+                    
+	</div>
+                <!-- Panel de actualización AJAX -->
+
+        
+     
+        
+
+                
+    
+    <div class="fullform-bg-nomenu">
+        
+        <!-- SUPERIOR -->    
+        
+    
+    <!-- BARRA SUPERIOR -->
+    <div class="div-encabezado">
+        <div style="clear: none; float: left;">
+            <img src="./CONEAU Global - Acreditación_files/logo1-42px.png" alt="CONEAU Global - Atenea">&nbsp;&nbsp;
+        </div>
+        <div class="titulo-encabezado">Buscador de carreras acreditadas</div>
+        <div class="div-clear"></div>
+    </div>
+
+ 
+        <!-- SUPERIOR -->    
+
+        <!-- NAVEGACION IZQUIERDA -->    
+        <div class="fullform-navegador">
+            
+    
+            <input type="hidden" id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdoGS" name="Central_Central_Izquierdo_Izquierdo_mnuIzquierdoGS" value="1"><script id="dxis_1041272508" src="./CONEAU Global - Acreditación_files/DXR(8).axd" type="text/javascript"></script><script id="dxis_650087976" src="./CONEAU Global - Acreditación_files/DXR(9).axd" type="text/javascript"></script><script id="dxis_1923726726" src="./CONEAU Global - Acreditación_files/DXR(10).axd" type="text/javascript"></script><script id="dxis_1371967078" src="./CONEAU Global - Acreditación_files/DXR(11).axd" type="text/javascript"></script><script id="dxis_1236385158" src="./CONEAU Global - Acreditación_files/DXR(12).axd" type="text/javascript"></script><script id="dxis_980782780" src="./CONEAU Global - Acreditación_files/DXR(13).axd" type="text/javascript"></script><script id="dxis_1899973932" src="./CONEAU Global - Acreditación_files/DXR(14).axd" type="text/javascript"></script><script id="dxis_650087763" src="./CONEAU Global - Acreditación_files/DXR(15).axd" type="text/javascript"></script><script id="dxis_650088221" src="./CONEAU Global - Acreditación_files/DXR(16).axd" type="text/javascript"></script><script id="dxis_1041272422" src="./CONEAU Global - Acreditación_files/DXR(17).axd" type="text/javascript"></script><script id="dxis_1371966768" src="./CONEAU Global - Acreditación_files/DXR(18).axd" type="text/javascript"></script><script id="dxis_650088170" src="./CONEAU Global - Acreditación_files/DXR(19).axd" type="text/javascript"></script><table class="dxnbControl_Aqua" cellspacing="0" cellpadding="0" id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:210px;border-collapse:collapse;border-collapse:separate;">
+		<tbody><tr>
+			<td class="dxnbCtrl" valign="top"><table cellspacing="0" cellpadding="0" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;border-collapse:collapse;border-collapse:separate;">
+				<tbody><tr>
+					<td style="width:100%;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+						<tbody><tr>
+							<td id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_GHE0" class="dxnbGroupHeader_Aqua" onclick="aspxNBHClick(event, &#39;Central_Central_Izquierdo_Izquierdo_mnuIzquierdo&#39;, 0)" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;cursor:pointer;"><table cellspacing="0" cellpadding="0" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;border-collapse:collapse;border-collapse:separate;text-decoration:inherit;">
+								<tbody><tr>
+									<td class="dxnb dxnb-ghtext" style="width:100%;"><span style="font-family:Arial,Verdana,Tahoma;font-size:13px;">Carreras acreditadas</span></td><td class="dxnbImgCellRight_Aqua dxnb"><img src="./CONEAU Global - Acreditación_files/nbCollapse.png" alt="" style="height:17px;width:17px;"></td>
+								</tr>
+							</tbody></table></td>
+						</tr><tr style="display:none;">
+							<td id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_GHC0" class="dxnbGroupHeaderCollapsed_Aqua" onclick="aspxNBHClick(event, &#39;Central_Central_Izquierdo_Izquierdo_mnuIzquierdo&#39;, 0)" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;cursor:pointer;"><table cellspacing="0" cellpadding="0" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;border-collapse:collapse;border-collapse:separate;text-decoration:inherit;">
+								<tbody><tr>
+									<td class="dxnb dxnb-ghtext" style="width:100%;"><span style="font-family:Arial,Verdana,Tahoma;font-size:13px;">Carreras acreditadas</span></td><td class="dxnbImgCellRight_Aqua dxnb"><img src="./CONEAU Global - Acreditación_files/nbExpand.png" alt="" style="height:17px;width:17px;"></td>
+								</tr>
+							</tbody></table></td>
+						</tr><tr>
+							<td id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_GC0" class="dxnbGroupContent_Aqua" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;border-top-width:0px;"><table cellspacing="0" cellpadding="0" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;border-collapse:collapse;border-collapse:separate;">
+								<tbody><tr id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_I0i0_" onclick="aspxNBIClick(event, &#39;Central_Central_Izquierdo_Izquierdo_mnuIzquierdo&#39;, 0, 0)">
+									<td id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_I0i0_T" class="dxnbItem_Aqua" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;cursor:pointer;"><span style="font-family:Arial,Verdana,Tahoma;font-size:13px;">Carreras de grado</span></td>
+								</tr><tr style="height:1px;">
+									<td></td>
+								</tr><tr id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_I0i1_" onclick="aspxNBIClick(event, &#39;Central_Central_Izquierdo_Izquierdo_mnuIzquierdo&#39;, 0, 1)">
+									<td id="Central_Central_Izquierdo_Izquierdo_mnuIzquierdo_I0i1_T" class="dxnbItem_Aqua" style="font-family:Arial,Verdana,Tahoma;font-size:13px;width:100%;cursor:pointer;"><span style="font-family:Arial,Verdana,Tahoma;font-size:13px;">Carreras de posgrado</span></td>
+								</tr>
+							</tbody></table></td>
+						</tr>
+					</tbody></table></td>
+				</tr>
+			</tbody></table></td>
+		</tr>
+	</tbody></table><script id="dxss_885925291" type="text/javascript">
+<!--
+aspxAddHoverItems('Central_Central_Izquierdo_Izquierdo_mnuIzquierdo',[[['dxnbGroupHeaderHover_Aqua'],[''],['GHE0']],[['dxnbGroupHeaderCollapsedHover_Aqua'],[''],['GHC0']],[['dxnbItemHover_Aqua'],[''],['I0i0_','I0i1_'],['I','T'],[[''],['']],['Img']]]);
+
+var dxo = new ASPxClientNavBar('Central_Central_Izquierdo_Izquierdo_mnuIzquierdo');
+window['Central_Central_Izquierdo_Izquierdo_mnuIzquierdo'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Izquierdo$Izquierdo$mnuIzquierdo';
+dxo.RegisterServerEventAssigned(['ItemClick']);
+dxo.groupsExpanding=[true];
+dxo.groupCount=1;
+dxo.InlineInitialize();
+
+//-->
+</script>
+
+ 
+        </div>
+        <!-- NAVEGACION IZQUIERDA -->    
+
+
+        <div class="fullform-separador">
+        </div>
+
+        <!-- CENTRAL -->
+        <div class="fullform-contenido">
+            
+    
+
+<!-- CENTRAL -->
+    <div class="div-encabezado">
+        <div class="div-app-consultas-superior" style="width: 100%">
+            Buscar por&nbsp;
+            <select name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$cmbBuscarPor" id="Central_Central_Central_Central_cmbBuscarPor" style="width:125px;">
+		<option value="Institución">Institución</option>
+		<option value="Unidad Académica">Unidad Académica</option>
+		<option value="Carrera">Carrera</option>
+
+	</select>
+            &nbsp;el valor&nbsp;
+            <input name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$edtBuscar" type="text" id="Central_Central_Central_Central_edtBuscar" style="width:300px;">
+            <input type="submit" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$btnBuscarID" value="Buscar" id="Central_Central_Central_Central_btnBuscarID" class="boton boton-azul"> 
+             <input type="submit" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$verResolucion" value="Ver resolución / dictamen" id="Central_Central_Central_Central_verResolucion" class="boton boton-verde">
+             <input type="submit" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$verAnexoResolucion" value="Ver anexo" id="Central_Central_Central_Central_verAnexoResolucion" class="boton boton-verde">
+        </div>
+        <div class="div-clear"></div>
+    </div>
+
+
+
+
+<div id="divAppConsultasGrilla">
+
+
+              <div id="Central_Central_Central_Central_pnlGrado">
+		
+                            <div style="padding:20px">
+                            <span style="font-size:16px; color: #878181">Carreras de Grado</span>
+                            <br>  <br>
+                            El buscador permite acceder a las resoluciones de acreditación de carreras de grado.<br> 
+                            No todas las resoluciones que figuran se encuentran vigentes. <br>
+                            Por otro lado, dado que el proceso de acreditación es dinámico y la Comisión aprueba nuevos trámites en cada una de sus sesiones quincenales, es posible que una resolución recientemente aprobada no se encuentre aún a través del buscador. <br>
+                            Pueden realizarse consultas sobre acreditación de carreras de grado escribiendo a direccionacreditacion@coneau.gob.ar
+                            <br>
+                            </div>
+             
+	</div>
+
+              
+
+
+
+
+    <table class="dxgvControl_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta" style="border-collapse:collapse;border-collapse:separate;">
+		<tbody><tr>
+			<td><div class="dxgvPagerTopPanel_Glass">
+				<table class="dxpControl_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXPagerTop" style="border-collapse:collapse;border-collapse:separate;">
+					<tbody><tr>
+						<td class="dxpCtrl"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;border-collapse:separate;">
+							<tbody><tr>
+								<td class="dxpSummary_Glass" style="white-space:nowrap;">1 de 107 (2656 ítems)</td><td style="width:4px;"><div style="height:1px;width:4px;overflow:hidden;">
+
+								</div></td><td class="dxpButton_Glass dxpDisabledButton_Glass dxpDisabled_Glass"><img src="./CONEAU Global - Acreditación_files/pPrevDisabled.png" alt="Anterior" style="height:19px;width:19px;"></td><td style="width:4px;"><div style="height:1px;width:4px;overflow:hidden;">
+
+								</div></td><td class="dxpButton_Glass" onclick="aspxGVPagerOnClick(&#39;Central_Central_Central_Central_grdConsulta&#39;,&#39;PBN&#39;);" style="cursor:pointer;"><img src="./CONEAU Global - Acreditación_files/pNext.png" alt="Siguiente" style="height:19px;width:19px;"></td>
+							</tr>
+						</tbody></table></td>
+					</tr>
+				</tbody></table>
+			</div><div id="Central_Central_Central_Central_grdConsulta_grouppanel" class="dxgvGroupPanel_Glass">
+				Arrastre una columna para agrupar por ese criterio.
+			</div><table id="Central_Central_Central_Central_grdConsulta_DXMainTable" class="dxgvTable_Glass" cellspacing="0" cellpadding="0" onclick="aspxGVTableClick(&#39;Central_Central_Central_Central_grdConsulta&#39;, event);" style="width:100%;border-collapse:collapse;empty-cells:show;">
+				<tbody><tr id="Central_Central_Central_Central_grdConsulta_DXHeadersRow0">
+					<td id="Central_Central_Central_Central_grdConsulta_col1" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:250px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Carrera</td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col2" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:200px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Institución</td><td style="padding-left:5px;padding-right:5px;"><img src="./CONEAU Global - Acreditación_files/gvHeaderSortUp.gif" alt="(Ascendente)"></td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col3" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:200px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Unidad académica</td><td style="padding-left:5px;padding-right:5px;"><img src="./CONEAU Global - Acreditación_files/gvHeaderSortUp.gif" alt="(Ascendente)"></td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col4" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:200px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Estado</td><td style="padding-left:5px;padding-right:5px;"><img src="./CONEAU Global - Acreditación_files/gvHeaderSortUp.gif" alt="(Ascendente)"></td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col5" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:120px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Resolucion</td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col6" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:120px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Número Anexo</td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col7" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:120px;border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Número</td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td><td id="Central_Central_Central_Central_grdConsulta_col8" class="dxgvHeader_Glass" onmousedown="aspxGVHeaderMouseDown(&#39;Central_Central_Central_Central_grdConsulta&#39;, this, event);" style="width:120px;border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;">Resol. CONEAU</td><td style="cursor:default;"><img class="dxgv__hfb" src="./CONEAU Global - Acreditación_files/gvHeaderFilter.png" alt="[Filtrar]" style="height:18px;width:18px;"></td>
+						</tr>
+					</tbody></table></td>
+				</tr><tr class="dxgvFilterRow_Glass">
+					<td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol1" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol1" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol1&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol1_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol1&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol1&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol1&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol1&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_1688393718" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol1',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol1');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol1'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol1';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,1,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol2" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol2" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol2&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol2_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol2&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol2&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol2&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol2&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_1497274029" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol2',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol2');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol2'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol2';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,2,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol3" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol3" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol3&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol3_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol3&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol3&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol3&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol3&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_502083781" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol3',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol3');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol3'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol3';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,3,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol4" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol4" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol4&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol4_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol4&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol4&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol4&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol4&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_1193775487" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol4',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol4');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol4'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol4';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,4,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol5" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol5" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol5&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol5_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol5&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol5&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol5&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol5&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_510910221" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol5',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol5');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol5'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol5';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,5,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol6" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol6" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol6&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol6_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol6&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol6&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol6&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol6&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_1579545283" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol6',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol6');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol6'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol6';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,6,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol7" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol7" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol7&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol7_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol7&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol7&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol7&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol7&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_1894517208" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol7',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol7');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol7'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol7';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,7,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td><td class="dxgv" style="border-right-width:0px;"><table cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+						<tbody><tr>
+							<td style="width:100%;padding-right:2px;"><table class="dxeTextBoxSys dxeTextBox_Glass" cellspacing="0" cellpadding="0" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol8" style="width:100%;border-collapse:collapse;">
+								<tbody><tr>
+									<td class="dxic" style="width:100%;"><input class="dxeEditArea_Glass dxeEditAreaSys" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol8" onkeyup="aspxEKeyUp(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol8&#39;, event)" id="Central_Central_Central_Central_grdConsulta_DXFREditorcol8_I" onchange="aspxEValueChanged(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol8&#39;)" onblur="aspxELostFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol8&#39;)" onfocus="aspxEGotFocus(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol8&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;Central_Central_Central_Central_grdConsulta_DXFREditorcol8&#39;, event)"></td>
+								</tr>
+							</tbody></table><script id="dxss_1835112769" type="text/javascript">
+<!--
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFREditorcol8',[[['dxeDisabled_Glass'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('Central_Central_Central_Central_grdConsulta_DXFREditorcol8');
+window['Central_Central_Central_Central_grdConsulta_DXFREditorcol8'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFREditorcol8';
+dxo.ValueChanged.AddHandler(function(s, event) { aspxGVFilterChanged('Central_Central_Central_Central_grdConsulta',s);; });
+dxo.KeyDown.AddHandler(function(s, event) { aspxGVFilterKeyPress('Central_Central_Central_Central_grdConsulta',s,event);; });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_Glass','');
+dxo.InlineInitialize();
+
+//-->
+</script></td><td><img onclick="aspxGVFilterRowMenu(&#39;Central_Central_Central_Central_grdConsulta&#39;,8,this)" src="./CONEAU Global - Acreditación_files/gvFilterRowButton.png" alt="[Condición]" style="height:13px;width:13px;cursor:pointer;"></td>
+						</tr>
+					</tbody></table></td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow0" class="dxgvFocusedRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Electrónica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Departamento de Ingeniería Electrónica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">513/03</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow1" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería en Petróleo</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Departamento de Ingeniería en Petróleo</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">515/03</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow2" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Mecánica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Departamento de Ingeniería Mecánica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">516/03</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow3" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Química</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Departamento de Ingeniería Química</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">514/03</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow4" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Industrial</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">087/06</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow5" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Química</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">981/10</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow6" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Mecánica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">980/10</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow7" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería en Petróleo</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">979/10</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow8" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Electrónica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">978/10</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow9" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Eléctrica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">987/10</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow10" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Industrial</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">513/14</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow11" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Informática</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">1104/11</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow12" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Industrial</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">509/14</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow13" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Eléctrica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">508/14</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow14" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Informática</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería y Gestión</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">RS-2019-49568977-APN-CONEAU#MECCYT</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">IF-2019-46156215-APN-DAC#CONEAU</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">RS-2019-49568977-APN-CONEAU#MECCYT</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">RESFC-2019-170-APN-CONEAU#MECCYT</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow15" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Eléctrica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería y Tecnología</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">RS-2019-86763755-APN-CONEAU#MECCYT</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">IF-2019-81789041-APN-DAC#CONEAU</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">RS-2019-86763755-APN-CONEAU#MECCYT</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">RESFC-2019-406-APN-CONEAU#MECCYT</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow16" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Química</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">007/08</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow17" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Mecánica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">006/08</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow18" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería en Petróleo</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">005/08</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow19" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Civil</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela De Gestión Y Tecnología</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera nueva (Proyecto)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">IF-2024-30577313-APN-CONEAU#MCH</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">IF-2024-30577313-APN-CONEAU#MCH</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow20" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Bioingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Tecnológico de Buenos Aires</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Escuela de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera nueva (Proyecto)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">804-1340/12</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow21" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Mecánica Aeronáutica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Universitario Aeronáutico</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Facultad de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">734/05</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow22" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería Electrónica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Universitario Aeronáutico</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Facultad de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">320/05</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow23" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Ingeniería en Telecomunicaciones</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Instituto Universitario Aeronáutico</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Facultad de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">662/08</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;">&nbsp;</td>
+				</tr><tr id="Central_Central_Central_Central_grdConsulta_DXDataRow24" class="dxgvDataRow_Glass">
+					<td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">Ingeniería Mecánica Aeronáutica</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">Instituto Universitario Aeronáutico</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">Facultad de Ingeniería</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">Carrera en funcionamiento (Carrera)</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">725/09</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-bottom-width:0px;">&nbsp;</td><td class="dxgv" style="vertical-align:Middle;white-space:nowrap;padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;border-right-width:0px;border-bottom-width:0px;">&nbsp;</td>
+				</tr>
+			</tbody></table><img id="Central_Central_Central_Central_grdConsulta_IADD" src="./CONEAU Global - Acreditación_files/gvDragAndDropArrowDown.gif" alt="|" style="position:absolute;visibility:hidden;top:-100px;"><img id="Central_Central_Central_Central_grdConsulta_IADU" src="./CONEAU Global - Acreditación_files/gvDragAndDropArrowUp.gif" alt="|" style="position:absolute;visibility:hidden;top:-100px;"><img id="Central_Central_Central_Central_grdConsulta_IDHF" src="./CONEAU Global - Acreditación_files/gvDragAndDropHideColumn.gif" alt="Ocultar" style="position:absolute;visibility:hidden;top:-100px;"><input type="hidden" id="Central_Central_Central_Central_grdConsulta_DXHFPWS" name="Central_Central_Central_Central_grdConsulta_DXHFPWS" value="0:0:-1:-10000:-10000:0:180px:100px:1:0:0:0"><div id="Central_Central_Central_Central_grdConsulta_DXHFP_PW-1" class="dxpcLite_Glass dxpclW" style="height:100px;width:180px;z-index:10000;display:none;">
+				<div class="dxpc-mainDiv dxpc-shadow" style="cursor:default;">
+					<div class="dxpc-contentWrapper">
+						<div class="dxpc-content" style="padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;overflow-x:hidden;overflow-y:auto;" id="Central_Central_Central_Central_grdConsulta_DXHFP_PWC-1">
+							&nbsp;&nbsp;
+						</div>
+					</div><div class="dxpc-footer" id="Central_Central_Central_Central_grdConsulta_DXHFP_PWF-1">
+						<div class="dxpc-footerContent">
+							<span class="dxpc-footerText" id="Central_Central_Central_Central_grdConsulta_DXHFP_PWF-1T"></span>
+						</div><img class="dxpc-sizeGrip" src="./CONEAU Global - Acreditación_files/WindowResizer.gif" alt="[Redimensionar]"><b class="dx-clear"></b>
+					</div>
+				</div>
+			</div><table id="Central_Central_Central_Central_grdConsulta_DXHFP_LP" class="dxpcLoadingPanel_Glass" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+				<tbody><tr>
+					<td class="dx" style="padding-right:8px;"><img src="./CONEAU Global - Acreditación_files/Loading.gif" alt="" align="middle"></td><td class="dx" style="padding-left:0px;"><span id="Central_Central_Central_Central_grdConsulta_DXHFP_TL">Cargando…</span></td>
+				</tr>
+			</tbody></table><div id="Central_Central_Central_Central_grdConsulta_DXHFP_LD" class="dxpcLoadingDiv_Glass" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+			</div><script id="dxss_1631128406" type="text/javascript">
+<!--
+aspxAddHoverItems('Central_Central_Central_Central_grdConsulta_DXHFP',[[['dxpc-closeBtnHover'],[''],['HCB-1'],,[['']],['Img']],[['dxpc-pinBtnHover'],[''],['HPB-1'],,[['']],['Img']],[['dxpc-refreshBtnHover'],[''],['HRB-1'],,[['']],['Img']],[['dxpc-collapseBtnHover'],[''],['HMNB-1'],,[['']],['Img']],[['dxpc-maximizeBtnHover'],[''],['HMXB-1'],,[['']],['Img']]]);
+
+var dxo = new ASPxClientPopupControl('Central_Central_Central_Central_grdConsulta_DXHFP');
+window['Central_Central_Central_Central_grdConsulta_DXHFP'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXHFP',arg,aspxCallback,'Central_Central_Central_Central_grdConsulta_DXHFP',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXHFP';
+dxo.popupAnimationType='fade';
+dxo.allowResize=true;
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.contentOverflowX = "Hidden";
+dxo.contentOverflowY = "Auto";
+dxo.liteRender=true;
+dxo.width=180;
+dxo.height=100;
+dxo.minHeight=100;
+dxo.minWidth=180;
+aspxAddSelectedItems('Central_Central_Central_Central_grdConsulta_DXHFP',[[['dxpc-pinBtnChecked'],[''],['HPB-1'],,[['']],['Img']],[['dxpc-collapseBtnChecked'],[''],['HMNB-1'],,[['']],['Img']],[['dxpc-maximizeBtnChecked'],[''],['HMXB-1'],,[['']],['Img']]]);
+dxo.InlineInitialize();
+
+//-->
+</script><table id="Central_Central_Central_Central_grdConsulta_LP" class="dxgvLoadingPanel_Glass" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+				<tbody><tr>
+					<td class="dx"><img src="./CONEAU Global - Acreditación_files/Loading(1).gif" alt="" align="middle"></td><td class="dx" style="padding-left:0px;"><span id="Central_Central_Central_Central_grdConsulta_TL">Cargando…</span></td>
+				</tr>
+			</tbody></table><div id="Central_Central_Central_Central_grdConsulta_LD" class="dxgvLoadingDiv_Glass" style="display:none;z-index:29999;position:absolute;">
+
+			</div><input type="hidden" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXSelInput" id="Central_Central_Central_Central_grdConsulta_DXSelInput"><input type="hidden" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXKVInput" id="Central_Central_Central_Central_grdConsulta_DXKVInput" value="[&#39;7010&#39;,&#39;7012&#39;,&#39;7013&#39;,&#39;7011&#39;,&#39;7446&#39;,&#39;15563&#39;,&#39;15564&#39;,&#39;15643&#39;,&#39;15644&#39;,&#39;15806&#39;,&#39;19123&#39;,&#39;27303&#39;,&#39;32091&#39;,&#39;33609&#39;,&#39;42125&#39;,&#39;41123&#39;,&#39;7542&#39;,&#39;7543&#39;,&#39;7544&#39;,&#39;48824&#39;,&#39;31610&#39;,&#39;7188&#39;,&#39;7189&#39;,&#39;8541&#39;,&#39;12000&#39;]"><table id="Central_Central_Central_Central_grdConsulta_DXStyleTable" style="display:none;">
+				<tbody><tr>
+					<td></td>
+				</tr><tr class="dxgvEditingErrorRow_Glass">
+					<td class="dxgv" colspan="8" style="border-right-width:0px;"></td>
+				</tr><tr class="dxgvSelectedRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvFocusedRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvFocusedGroupRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr><tr class="dxgvDataRow_Glass">
+					<td></td>
+				</tr>
+			</tbody></table><input type="hidden" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$CallbackState" id="Central_Central_Central_Central_grdConsulta_CallbackState" value="BwMHAgIERGF0YQbYEQAAAABgCgAAYAoAAAAAAAAZAAAAAAkAAAALSURfQ0FSUkVSQVMLSURfQ0FSUkVSQVMFAAAHQ0FSUkVSQQdDQVJSRVJBBwAAC0lOU1RJVFVDSU9OC0lOU1RJVFVDSU9OBwAAEFVOSURBRF9BQ0FERU1JQ0EQVU5JREFEX0FDQURFTUlDQQcAAApSRVNPTFVDSU9OClJFU09MVUNJT04HAAAGTlVNRVJPBk5VTUVSTwcAAA5OVU1FUk9FU1BFQ0lBTA5OVU1FUk9FU1BFQ0lBTAcAAA1OVU1FUk9fQU5FWE9TDU5VTUVST19BTkVYT1MHAAAORVNUQURPX0NBUlJFUkEORVNUQURPX0NBUlJFUkEHAAAAAAAABwAHAAcABwAG//8FBmIbBwIYSW5nZW5pZXLDrWEgRWxlY3Ryw7NuaWNhBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAihEZXBhcnRhbWVudG8gZGUgSW5nZW5pZXLDrWEgRWxlY3Ryw7NuaWNhBwIGNTEzLzAzDAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQZkGwcCGEluZ2VuaWVyw61hIGVuIFBldHLDs2xlbwcCJkluc3RpdHV0byBUZWNub2zDs2dpY28gZGUgQnVlbm9zIEFpcmVzBwIoRGVwYXJ0YW1lbnRvIGRlIEluZ2VuaWVyw61hIGVuIFBldHLDs2xlbwcCBjUxNS8wMwwMDAcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpBwAHAAb//wUGZRsHAhVJbmdlbmllcsOtYSBNZWPDoW5pY2EHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCJURlcGFydGFtZW50byBkZSBJbmdlbmllcsOtYSBNZWPDoW5pY2EHAgY1MTYvMDMMDAwHAiNDYXJyZXJhIGVuIGZ1bmNpb25hbWllbnRvIChDYXJyZXJhKQcABwAG//8FBmMbBwIUSW5nZW5pZXLDrWEgUXXDrW1pY2EHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCJERlcGFydGFtZW50byBkZSBJbmdlbmllcsOtYSBRdcOtbWljYQcCBjUxNC8wMwwMDAcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpBwAHAAb//wUGFh0HAhZJbmdlbmllcsOtYSBJbmR1c3RyaWFsBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAhZFc2N1ZWxhIGRlIEluZ2VuaWVyw61hBwIGMDg3LzA2DAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQbLPAcCFEluZ2VuaWVyw61hIFF1w61taWNhBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAhZFc2N1ZWxhIGRlIEluZ2VuaWVyw61hBwIGOTgxLzEwDAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQbMPAcCFUluZ2VuaWVyw61hIE1lY8OhbmljYQcCJkluc3RpdHV0byBUZWNub2zDs2dpY28gZGUgQnVlbm9zIEFpcmVzBwIWRXNjdWVsYSBkZSBJbmdlbmllcsOtYQcCBjk4MC8xMAwMDAcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpBwAHAAb//wUGGz0HAhhJbmdlbmllcsOtYSBlbiBQZXRyw7NsZW8HAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCFkVzY3VlbGEgZGUgSW5nZW5pZXLDrWEHAgY5NzkvMTAMDAwHAiNDYXJyZXJhIGVuIGZ1bmNpb25hbWllbnRvIChDYXJyZXJhKQcABwAG//8FBhw9BwIYSW5nZW5pZXLDrWEgRWxlY3Ryw7NuaWNhBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAhZFc2N1ZWxhIGRlIEluZ2VuaWVyw61hBwIGOTc4LzEwDAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQa+PQcCFkluZ2VuaWVyw61hIEVsw6ljdHJpY2EHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCFkVzY3VlbGEgZGUgSW5nZW5pZXLDrWEHAgY5ODcvMTAMDAwHAiNDYXJyZXJhIGVuIGZ1bmNpb25hbWllbnRvIChDYXJyZXJhKQcABwAG//8FBrNKBwIWSW5nZW5pZXLDrWEgSW5kdXN0cmlhbAcCJkluc3RpdHV0byBUZWNub2zDs2dpY28gZGUgQnVlbm9zIEFpcmVzBwIWRXNjdWVsYSBkZSBJbmdlbmllcsOtYQcCBjUxMy8xNAwMDAcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpBwAHAAb//wUGp2oHAhhJbmdlbmllcsOtYSBJbmZvcm3DoXRpY2EHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCFkVzY3VlbGEgZGUgSW5nZW5pZXLDrWEHAgcxMTA0LzExDAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQZbfQcCFkluZ2VuaWVyw61hIEluZHVzdHJpYWwHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCFkVzY3VlbGEgZGUgSW5nZW5pZXLDrWEHAgY1MDkvMTQMDAwHAiNDYXJyZXJhIGVuIGZ1bmNpb25hbWllbnRvIChDYXJyZXJhKQcABwAG//8FBUmDAAAHAhZJbmdlbmllcsOtYSBFbMOpY3RyaWNhBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAhZFc2N1ZWxhIGRlIEluZ2VuaWVyw61hBwIGNTA4LzE0DAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQWNpAAABwIYSW5nZW5pZXLDrWEgSW5mb3Jtw6F0aWNhBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAiFFc2N1ZWxhIGRlIEluZ2VuaWVyw61hIHkgR2VzdGnDs24HAiJSUy0yMDE5LTQ5NTY4OTc3LUFQTi1DT05FQVUjTUVDQ1lUBwIiUlMtMjAxOS00OTU2ODk3Ny1BUE4tQ09ORUFVI01FQ0NZVAcCIFJFU0ZDLTIwMTktMTcwLUFQTi1DT05FQVUjTUVDQ1lUBwIfSUYtMjAxOS00NjE1NjIxNS1BUE4tREFDI0NPTkVBVQcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpBwAHAAb//wUFo6AAAAcCFkluZ2VuaWVyw61hIEVsw6ljdHJpY2EHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCJEVzY3VlbGEgZGUgSW5nZW5pZXLDrWEgeSBUZWNub2xvZ8OtYQcCIlJTLTIwMTktODY3NjM3NTUtQVBOLUNPTkVBVSNNRUNDWVQHAiJSUy0yMDE5LTg2NzYzNzU1LUFQTi1DT05FQVUjTUVDQ1lUBwIgUkVTRkMtMjAxOS00MDYtQVBOLUNPTkVBVSNNRUNDWVQHAh9JRi0yMDE5LTgxNzg5MDQxLUFQTi1EQUMjQ09ORUFVBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQZ2HQcCFEluZ2VuaWVyw61hIFF1w61taWNhBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCBjAwNy8wOAwMDAcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpBwAHAAb//wUGdx0HAhVJbmdlbmllcsOtYSBNZWPDoW5pY2EHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCJkluc3RpdHV0byBUZWNub2zDs2dpY28gZGUgQnVlbm9zIEFpcmVzBwIGMDA2LzA4DAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQZ4HQcCGEluZ2VuaWVyw61hIGVuIFBldHLDs2xlbwcCJkluc3RpdHV0byBUZWNub2zDs2dpY28gZGUgQnVlbm9zIEFpcmVzBwImSW5zdGl0dXRvIFRlY25vbMOzZ2ljbyBkZSBCdWVub3MgQWlyZXMHAgYwMDUvMDgMDAwHAiNDYXJyZXJhIGVuIGZ1bmNpb25hbWllbnRvIChDYXJyZXJhKQcABwAG//8FBbi+AAAHAhFJbmdlbmllcsOtYSBDaXZpbAcCJkluc3RpdHV0byBUZWNub2zDs2dpY28gZGUgQnVlbm9zIEFpcmVzBwIhRXNjdWVsYSBEZSBHZXN0acOzbiBZIFRlY25vbG9nw61hBwIfSUYtMjAyNC0zMDU3NzMxMy1BUE4tQ09ORUFVI01DSAcCH0lGLTIwMjQtMzA1NzczMTMtQVBOLUNPTkVBVSNNQ0gMDAcCGENhcnJlcmEgbnVldmEgKFByb3llY3RvKQcABwAG//8FBnp7BwIOQmlvaW5nZW5pZXLDrWEHAiZJbnN0aXR1dG8gVGVjbm9sw7NnaWNvIGRlIEJ1ZW5vcyBBaXJlcwcCFkVzY3VlbGEgZGUgSW5nZW5pZXLDrWEHAgs4MDQtMTM0MC8xMgwMDAcCGENhcnJlcmEgbnVldmEgKFByb3llY3RvKQcABwAG//8FBhQcBwIiSW5nZW5pZXLDrWEgTWVjw6FuaWNhIEFlcm9uw6F1dGljYQcCJEluc3RpdHV0byBVbml2ZXJzaXRhcmlvIEFlcm9uw6F1dGljbwcCF0ZhY3VsdGFkIGRlIEluZ2VuaWVyw61hBwIGNzM0LzA1DAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQYVHAcCGEluZ2VuaWVyw61hIEVsZWN0csOzbmljYQcCJEluc3RpdHV0byBVbml2ZXJzaXRhcmlvIEFlcm9uw6F1dGljbwcCF0ZhY3VsdGFkIGRlIEluZ2VuaWVyw61hBwIGMzIwLzA1DAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQZdIQcCIUluZ2VuaWVyw61hIGVuIFRlbGVjb211bmljYWNpb25lcwcCJEluc3RpdHV0byBVbml2ZXJzaXRhcmlvIEFlcm9uw6F1dGljbwcCF0ZhY3VsdGFkIGRlIEluZ2VuaWVyw61hBwIGNjYyLzA4DAwMBwIjQ2FycmVyYSBlbiBmdW5jaW9uYW1pZW50byAoQ2FycmVyYSkHAAcABv//BQbgLgcCIkluZ2VuaWVyw61hIE1lY8OhbmljYSBBZXJvbsOhdXRpY2EHAiRJbnN0aXR1dG8gVW5pdmVyc2l0YXJpbyBBZXJvbsOhdXRpY28HAhdGYWN1bHRhZCBkZSBJbmdlbmllcsOtYQcCBjcyNS8wOQwMDAcCI0NhcnJlcmEgZW4gZnVuY2lvbmFtaWVudG8gKENhcnJlcmEpAgVTdGF0ZQesBwoG//8CAAcAAgEHAQIBBwICAQcDAgEHBAIBBwUCAQcGAgEHBwIBBv//AgAHAAcKBwAHAAcBBwMHAgcDBwMHAwcEBwMHBQcDBwYHAwcHBwMHCAcDBwkHAwcDBwAHAgcBBwAHBAcBBwAHAwcBBwACAAcABQZiGwILSURfQ0FSUkVSQVMHAQILSURfQ0FSUkVSQVMFCQIAAgADBwQCAAcAAgEGYAoHAAIBBwAHAAIIUGFnZVNpemUDBxk="><input type="hidden" name="ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFocusedRowInput" id="Central_Central_Central_Central_grdConsulta_DXFocusedRowInput" value="0"><input type="hidden" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenuCI" name="Central_Central_Central_Central_grdConsulta_DXFilterRowMenuCI" value=""><div class="dxmLite_Glass dxm-ltr">
+				<div id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu" style="z-index: 19998; display: none; position: absolute;">
+					<div class="dxm-popupMain dxm-shadow dxm-popup" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXME_">
+						<ul class="dx dxm-gutter">
+							<li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI0_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI0_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI0_Img">Comienza con
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI0_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI1_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI1_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI1_Img">Contiene
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI1_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI2_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI2_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI2_Img">No contiene
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI2_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI3_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI3_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI3_Img">Acaba con
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI3_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI4_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI4_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI4_Img">Igual
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI4_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI5_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI5_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI5_Img">No igual
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI5_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI6_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI6_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI6_Img">Es menor que
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI6_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI7_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI7_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI7_Img">Es menor o igual que
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI7_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI8_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI8_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI8_Img">Es mayor que
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI8_II"></li><li class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI9_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI9_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI9_Img">Es mayor o igual que
+							</div><b class="dx-clear"></b></li><li class="dxm-spacing" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI9_II"></li><li title="Hay dos símbolos comodines soportados:
+ &#39;%&#39; substituye cero o más caracteres;
+ &#39;_&#39; substituye un solo carácter." class="dxm-item" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI10_" style="cursor: pointer;"><div class="dxm-content dxm-hasText" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI10_T">
+								<img class="dxm-image" src="./CONEAU Global - Acreditación_files/mSubMenuItem.gif" alt="" id="Central_Central_Central_Central_grdConsulta_DXFilterRowMenu_DXI10_Img"><span title="Hay dos símbolos comodines soportados:
+ &#39;%&#39; substituye cero o más caracteres;
+ &#39;_&#39; substituye un solo carácter.">Como ('%', '_')</span>
+							</div><b class="dx-clear"></b></li>
+						</ul>
+					</div>
+				</div>
+			</div><script id="dxss_1783739572" type="text/javascript">
+<!--
+aspxAddHoverItems('Central_Central_Central_Central_grdConsulta_DXFilterRowMenu',[[[''],[''],['DXME_']],[['dxm-hovered',''],['',''],['DXI0_','DXI1_','DXI2_','DXI3_','DXI4_','DXI5_','DXI6_','DXI7_','DXI8_','DXI9_','DXI10_'],['','T'],[[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],['']],['Img','PImg']]]);
+aspxAddSelectedItems('Central_Central_Central_Central_grdConsulta_DXFilterRowMenu',[[['dxm-checked',''],['',''],['DXI0_','DXI1_','DXI2_','DXI3_','DXI4_','DXI5_','DXI6_','DXI7_','DXI8_','DXI9_','DXI10_'],['','T'],[['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif'],['../../../App_Themes/Glass/Web/mSubMenuItemChecked.gif']],['Img','PImg']]]);
+aspxAddDisabledItems('Central_Central_Central_Central_grdConsulta_DXFilterRowMenu',[[['dxm-disabled'],[''],['DXI0_','DXI1_','DXI2_','DXI3_','DXI4_','DXI5_','DXI6_','DXI7_','DXI8_','DXI9_','DXI10_'],['','T'],[[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],['']],['Img','PImg']]]);
+
+var dxo = new ASPxClientPopupMenu('Central_Central_Central_Central_grdConsulta_DXFilterRowMenu');
+window['Central_Central_Central_Central_grdConsulta_DXFilterRowMenu'] = dxo;
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta$DXFilterRowMenu';
+dxo.ItemClick.AddHandler(function(s,e){aspxGVFilterRowMenuClick('Central_Central_Central_Central_grdConsulta',e)});
+dxo.liteRender=true;
+dxo.liteRenderData={'':[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]};
+dxo.shadowVisible=false;
+dxo.allowCheckItems=true;
+dxo.itemCheckedGroups=[['0','1','2','3','4','5','6','7','8','9','10']];
+dxo.CreateItems([['1|S',,,,,[]],['3|S',,,,,[]],['4|S',,,,,[]],['2|S',,,,,[]],['5|SN',,,,,[]],['10|SN',,,,,[]],['6|N',,,,,[]],['7|N',,,,,[]],['8|N',,,,,[]],['9|N',,,,,[]],['11|L',,,,,[]]]);
+dxo.popupVerticalAlign='Below';
+dxo.InlineInitialize();
+
+//-->
+</script></td>
+		</tr>
+	</tbody></table><script id="dxss_78158716" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientGridView('Central_Central_Central_Central_grdConsulta');
+window['grid'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta',arg,aspxCallback,'Central_Central_Central_Central_grdConsulta',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$ctl00$ctl00$ctl00$Central$Central$Central$Central$grdConsulta';
+dxo.callBacksEnabled=true;
+dxo.pageRowCount=25;
+dxo.pageRowSize=25;
+dxo.pageIndex=0;
+dxo.pageCount=107;
+dxo.selectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=0;
+dxo.allowFocusedRow=true;
+dxo.allowSelectByRowClick=false;
+dxo.allowSelectSingleRowOnly=false;
+dxo.indentColumnCount=0;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.autoFilterDelay='1200';
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,'ID_CARRERAS',0,'N',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',1,-1,'CARRERA',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',2,-1,'INSTITUCION',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',3,-1,'UNIDAD_ACADEMICA',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',4,-1,'ESTADO_CARRERA',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',5,-1,'RESOLUCION',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',6,-1,'NUMERO_ANEXOS',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',7,-1,'NUMERO',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',8,-1,'NUMEROESPECIAL',1,'S',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',9,-1,'CLASE_CATEGORIA',0,'S',0,1,1,1,0,1,0)];
+dxo.pendingEvents=['RaiseFocusedRowChanged'];
+dxo.filterRowConditions=({'9':3,'8':3,'7':3,'6':3,'5':3,'4':3,'3':3,'2':3,'1':3,'0':5});
+dxo.editState=0;
+dxo.InlineInitialize();
+
+//-->
+</script>
+
+</div>      
+
+
+ 
+        </div>
+        <!-- CENTRAL -->
+        
+    </div>        
+
+    <!-- EXPORTADOR DE DATOS DE LA GRILLA -->    
+    
+
+
+                
+                   
+
+                
+</div>
+        </div>
+        <!-- CONTENIDO CENTRAL CON AJAX -->
+                
+        <!-- CONTENIDO INFERIOR -->
+        
+    
+    
+    
+
+
+
+
+
+
+        <!-- CONTENIDO INFERIOR -->
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='/coneauglobal/WebResource.axd?d=wA2pyhJG2v5BAfZDeSUoNsgjGFr-_LrAoEllbIf8PT3ayfR39_5d9l29_tN0yeG4t4bLvmfSiW4GMlLRWFjmzppcHvXtb1AqHrRakTDGdCk1&t=637811623220000000';
+WebForm_InitCallback();Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"UpdatePanel1","displayAfter":0,"dynamicLayout":true}, null, null, $get("UpdateProgress1"));
+});
+//]]>
+</script>
+<input type="hidden" name="DXScript" id="DXScript" value="1_142,1_80,1_135,1_121,1_90,1_113,1_98,1_105,1_77,1_128,1_126,1_133,1_119,1_127"></form>
+
+<script type="text/javascript">
+    function pageLoad() {
+        sgwEstadoAJAX("lblEstadoAJAX", "pnlEstadoAJAX");
+        sgwNucleoIniciar();
+        sgwAvisoProgramado();
+    }
+</script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40822241-1', 'global.coneau.gob.ar');
+  ga('send', 'pageview');
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;limited&quot;,&quot;isActive&quot;:false,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

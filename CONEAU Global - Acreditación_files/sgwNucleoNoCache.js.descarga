@@ -1,0 +1,4 @@
+﻿var sgwNucleoCorteDia = 18;
+var sgwNucleoCorteMes = 6;
+var sgwNucleoCorteAnio = 2018;
+var sgwNucleoCorteHora = 13;
